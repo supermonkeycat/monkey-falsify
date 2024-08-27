@@ -1,7 +1,5 @@
 # monkey-falsify
-Imitates Go Guardian whilst harboring an unblocker 
-  
-  ![Monkey Falsify](https://github.com/supermonkeycat/monkey-falsify/blob/main/monkeyfalsify.png)
+![Monkey Falsify](https://github.com/supermonkeycat/monkey-falsify/blob/main/monkeyfalsify.png)
 
 ## Features
 <details>
@@ -9,11 +7,13 @@ Imitates Go Guardian whilst harboring an unblocker
   
 - History Hiding
   
-- Spoofs GoGuardian
+- GoGuardian Imitation
 
 - Source Code viewing prevention
 
-- more !
+- Initial Security
+
+- and more!
 </details>
 
 
