@@ -21,6 +21,8 @@
 
 
 ## How to use Monkey Falsify for yourself
+<details>
+<summary>Tutoria</summary>
 1. Using Monkey Falsify is easy. First, you want to have a proxy link or your own proxy link. Check out Doge Unblocker, or whatever proxy, and deploy it via any deployment service (railway is easy & free!)
 2. I recommend you use your own proxy link, as it's fresh and likely to not be blocked on an iframe.
 3. Next, you're going to want to change [[ADD LATER]]
@@ -29,7 +31,7 @@
 6. Simply type anywhere on screen "letmein", and the site changes to the real page
 7. Happy Unblocking!
 (please star this repo)
-
+</details>
 
 ## Credits
 * [Doge Unblocker V4](https://github.com/DogeNetwork/v4)
