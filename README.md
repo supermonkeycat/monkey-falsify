@@ -6,7 +6,8 @@ Imitates Go Guardian whilst harboring an unblocker
 ## Features
 <details>
 <summary>View All Features</summary>
-- Silent Page Switching (No  search history logging)
+  
+- History Hiding
   
 - Spoofs GoGuardian
 
@@ -14,6 +15,9 @@ Imitates Go Guardian whilst harboring an unblocker
 
 - more !
 </details>
+
+
+
 
 
 ## How to use Monkey Falsify for yourself
@@ -25,3 +29,9 @@ Imitates Go Guardian whilst harboring an unblocker
 6. Simply type anywhere on screen "letmein", and the site changes to the real page
 7. Happy Unblocking!
 (please star this repo)
+
+
+## Credits
+* [Doge Unblocker V4](https://github.com/DogeNetwork/v4)
+* [T-Crack](https://github.com/Vortron-rd/T-Crack)
+* [Ingot](https://github.com/FogNetwork/Ingot)
