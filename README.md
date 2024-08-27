@@ -1,10 +1,7 @@
 # monkey-falsify
 ![Monkey Falsify](https://github.com/supermonkeycat/monkey-falsify/blob/main/monkeyfalsify.png)
 
-## Features
-<details>
-<summary>View All Features</summary>
-  
+## Features  
 - History Hiding
   
 - GoGuardian Imitation
@@ -14,7 +11,7 @@
 - Initial Security
 
 - and more!
-</details>
+
 
 
 
