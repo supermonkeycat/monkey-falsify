@@ -2,9 +2,14 @@ function switchStylesheet(newStylesheet) { //switches styles
         var link = document.getElementById('stylesheet');
         link.href = newStylesheet;
     }
+    var byebye = new Audio('byebye.mp3')
+    function playAudio() {
+    byebye.play();
+}
     // about blanker function
 function aboutblanker() {
     var newWindow = window.open('about:blank');
+    playAudio();
     if (newWindow) {
         window.location.replace("https://www.google.com/webhp?igu=1");
         var uURL = window.config.proxyLink
@@ -55,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             switchStylesheet('truth.css')
             document.getElementById('secretContent').style.display = 'block';
         }
-// same as above but with the about blanker code and calls the about blanker function
+
         if (input.endsWith(alternatecode)) {
             aboutblanker();
         }
