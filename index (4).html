@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- yes i know the code is messed up, i'll do a rewrite of it later on. i have no idea how it works if im being 100% honest-->
+<html lang="en">
+<head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This content is blocked!</title>
+    <link href="/assets/lock-icon.png" rel="icon" type="image/png">
+    <link id="stylesheet" rel="stylesheet" href="gguard.css">
+    <script src="script.js" defer></script>
+    <script src="security.js" defer></script>
+     <script src="config.js"></script>
+</head>
+<!-- goguardian page -->
+<body>
+    <div id="guard" style="display: block;">
+      <div class="outer">
+         <div class="middle" aria-label="This content is blocked" title="This content is blocked">
+            <div class="content">
+               <h1> <strong> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Restricted </strong> </h1>
+               <br> This website has been blocked by your administrator.<br><br> Your username has been logged. <br>
+            </div>
+            <div id="logindiv" class = "popspace" style="display: none;">
+               <div class="form" id="login" style="background-color: #DBDBDB;">
+                  <div style="padding: 10px;">
+                     <h3 class="pophead">Enter Password</h3>
+                     <p class ="pophead2 passapp">All Attempts are Logged.</p>
+                  </div>
+                  <input type="password" id="password" placeholder="Password"/> <br/><br/> <button class="btn btn-default btn-xs but submitAll">Bypass</button> 
+               </div>
+            </div>
+            <div id="unblockdiv" class = "popspace" style="top:178px; display: none;">
+               <div class="form" style="background-color: #DBDBDB;">
+                  <div style="padding: 10px;">
+                     <h3 class="pophead unblocktitle">Why?</h3>
+                     <p class="pophead2 unblockapp">Limit to 300 characters.</p>
+                  </div>
+                  <textarea type="text" id="unblockreq" placeholder="Explain"></textarea>
+                  <button class="btn btn-default btn-xs but submitcont" style="margin-left: 100px; margin-top: 20px;">Submit</button> 
+               </div>
+            </div>
+         </div>
+      </div>
+</div>
+<!-- real page -->
+    <div id="secretContent">
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id= "title">
+        <p class ="title"> Monkey Falsify</p> 
+    </div>
+    <div class="container"> <!-- iframe, info, and buttom -->
+        <script>
+        // sets the irame source based on the given config
+        document.addEventListener('DOMContentLoaded', () => {
+            const iframe = document.getElementById('hiddenIframe');  
+            iframe.src = window.config.proxyLink;  
+        });
+        </script>
+        <iframe id="hiddenIframe" src=""></iframe>
+        <div class="text-bottom">Exit using CTRL+Q to leave without history logging</div>
+        <button onclick="reloadIframe()">Click me to reload the page</button>
+    </div>
+<!-- this script was taken from T-Crack https://github.com/Vortron-rd/T-Crack (minus the reload iframe) -->
+    <script src="exit.js" defer></script>
+    </div>
+</body>
+</html>
