@@ -27,3 +27,6 @@
             const iframe = document.getElementById('hiddenIframe');
             iframe.src = iframe.src;
         }
+
+
+// taken from T-Crack
