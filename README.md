@@ -10,6 +10,8 @@
 
 - Initial Security
 
+- about:blank history security
+
 - and more!
 
 
@@ -26,7 +28,9 @@
   5. You'll then head over to your page. You might be shocked by a GoGuardian 'blocked' page, but this is fake.  
   6. Simply type anywhere on screen "letmein", and the site changes to the real page  
   7. Happy Unblocking!  
-  (please star this repo)  
+  (please star this repo)
+
+## Video Tutorial
 
 ## Contributors
 * [Me!](https://github.com/supermonkeycat)
