@@ -9,9 +9,22 @@
     <title>This content is blocked!</title>
     <link href="/assets/lock-icon.png" rel="icon" type="image/png">
     <link id="stylesheet" rel="stylesheet" href="gguard.css">
-    <script src="script.js" defer></script>
-    <script src="security.js" defer></script>
-     <script src="config.js"></script>
+    <script src="script.js?v=1" defer></script>
+    <script src="security.js?v=1"></script>
+     <script src="config.js?v=1"></script>
+     <!-- cache busting -->
+     <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js').then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }).catch(error => {
+        console.log('Service Worker registration failed:', error);
+      });
+    });
+  }
+</script>
+
 </head>
 <!-- goguardian page -->
 <body>
@@ -54,11 +67,11 @@
     </div>
     <div class="container"> <!-- iframe, info, and buttom -->
         <script>
-        // sets the irame source based on the given config
         document.addEventListener('DOMContentLoaded', () => {
-            const iframe = document.getElementById('hiddenIframe');  
-            iframe.src = window.config.proxyLink;  
-        });
+        // sets the irame source based on the given config
+      const iframe = document.getElementById('hiddenIframe');
+    iframe.src = window.config.proxyLink;
+});
         </script>
         <iframe id="hiddenIframe" src=""></iframe>
         <div class="text-bottom">Exit using CTRL+Q to leave without history logging</div>
