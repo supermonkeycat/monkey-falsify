@@ -8,8 +8,6 @@
 
 - Source Code viewing prevention
 
-- Initial Security
-
 - about:blank history security
 
 - and more!
