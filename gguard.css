@@ -296,7 +296,7 @@
             background-position-y: 3.80em;
             background-position-x: 50%;
             background-position: center center;
-            background-image: url('/assets/lock-icon.png');
+            background-image: url('lock-icon.png');
         }
 
         .content h1 {
