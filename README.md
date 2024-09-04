@@ -32,5 +32,4 @@
 * [Me!](https://github.com/supermonkeycat)
 
 ## Credits
-* [Doge Unblocker V4](https://github.com/DogeNetwork/v4)
 * [T-Crack](https://github.com/Vortron-rd/T-Crack)
