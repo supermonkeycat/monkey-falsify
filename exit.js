@@ -27,6 +27,24 @@
             const iframe = document.getElementById('hiddenIframe');
             iframe.src = iframe.src;
         }
+        function swapIframe() {
+            const timestamp = new Date().getTime();
+            const iframe = document.getElementById('hiddenIframe');
+            
+            const currentSrc = iframe.src;
+            const proxyLink = window.config.proxyLink;
+    
+            if (currentSrc.includes(proxyLink)) {
+                iframe.src = window.config.alternativeproxy + "?t=" + timestamp;
+                console.log("Swapped to alternative proxy");
+            } else {
+                iframe.src = window.config.proxyLink + "?t=" + timestamp;
+                console.log("Swapped to proxy link");
+            }
+        
+            // Print the new iframe src
+            console.log("Current iframe src: " + iframe.src);
+        }
 
 
 // taken from T-Crack
