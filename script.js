@@ -3,10 +3,11 @@ function switchStylesheet(newStylesheet) { //switches styles
         link.href = newStylesheet;
     }
 function aboutblanker() {
+    const iframe = document.getElementById('hiddenIframe');
     var newWindow = window.open('about:blank');
     if (newWindow) {
         window.location.replace("https://www.google.com/webhp?igu=1");
-        var uURL = window.config.proxyLink
+        var uURL = iframe.src
         newWindow.document.open();
         newWindow.document.write(`
             <!DOCTYPE html>
