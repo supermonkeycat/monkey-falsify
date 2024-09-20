@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let id = urlParams.get('id');
+    let season = urlParams.get('season');
+    let episode = urlParams.get('episode');
+
+    console.log(id, season, episode); 
+
+    let source;
+if (season !== "-2") {
+    if (season === "-1") {
+        source = `https://vidlink.pro/movie/${id}?nextbutton=true`;
+    }   
+    if (parseInt(season) > -1) {
+        source = `https://vidlink.pro/tv/${id}/${season}/${episode}?nextbutton=true`;
+    }
+}
+    if (season === "-2") {
+    source = `https://vidlink.pro/anime/${id}/${episode}/sub?nextbutton=true`;
+  }
+  console.log(id, season, episode); 
+  console.log(source); 
+    let iframe = document.createElement('iframe');
+    iframe.src = source;
+    iframe.frameBorder = "0";
+    iframe.className = "mediaplayer";
+    document.body.appendChild(iframe);
+    console.log(source)
+alert("g is for fullscreen")
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'g' || event.key === 'G') {
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { // Firefox
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+        }
+    });
+});
+    </script>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>This content is blocked!</title>
+        <link href="../lock-icon.png" rel="icon" type="image/png">
+        <link id="stylesheet" rel="stylesheet" href="../gversion/gdesign.css?v=21">
+        <script src="../script.js?v=21" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.40.0/css-doodle.min.js"></script>
+        <script src="../security.js?v=21"></script>
+        <script src="../gversion/newpage.js?v=21"></script>
+         <script src="../config.js?v=21"></script> 
+</head>
+<body>
+    <css-doodle><style>
+        --color: #51eaea, #fffde1, #ff9d76, #FB3569;
+      
+        @grid: 30x1 / 100vw 100vh / #270f34; 
+        
+        :container {
+          perspective: 30vmin;
+          --deg: @p(-180deg, 180deg);
+        }
+        
+        :after, :before {
+          content: '';
+          background: @p(--color); 
+          @place: @r(100%) @r(100%);
+          @size: @r(6px);
+          @shape: heart;
+        }
+      
+        @place: center;
+        @size: 18vmin; 
+      
+        box-shadow: @m2(0 0 50px @p(--color));
+        background: @m100(
+          radial-gradient(@p(--color) 50%, transparent 0) 
+          @r(-20%, 120%) @r(-20%, 100%) / 1px 1px
+          no-repeat
+        );
+      
+        will-change: transform, opacity;
+        animation: scale-up 12s linear infinite;
+        animation-delay: calc(-12s / @I * @i);
+      
+        @keyframes scale-up {
+          0%, 95.01%, 100% {
+            transform: translateZ(0) rotate(0);
+            opacity: 0;
+          }
+          10% { 
+            opacity: 1; 
+          }
+          95% {
+            transform: 
+              translateZ(35vmin) rotateZ(var(--deg));
+          }
+        }
+      </style></css-doodle>
+<button class="return" onclick="window.location.href = '../gversion/mainsite.html';">
+  <img src="../gversion/images/return.gif" class="returnbuttonimage">
+</button>
+
+</body>
+</html>

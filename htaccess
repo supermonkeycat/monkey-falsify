@@ -8,3 +8,50 @@
    Header set Pragma "no-cache"
    Header set Expires "0"
 </FilesMatch>
+# JavaScript files
+AddType application/javascript .js
+
+# CSS files
+AddType text/css .css
+
+# JSON files
+AddType application/json .json
+
+# HTML files
+AddType text/html .html .htm
+
+# Images
+AddType image/jpeg .jpeg .jpg
+AddType image/png .png
+AddType image/gif .gif
+AddType image/svg+xml .svg
+AddType image/webp .webp
+
+# Fonts
+AddType font/woff .woff
+AddType font/woff2 .woff2
+AddType application/font-woff .woff
+AddType application/font-woff2 .woff2
+AddType font/ttf .ttf
+AddType font/otf .otf
+
+# Videos
+AddType video/mp4 .mp4
+AddType video/webm .webm
+AddType video/ogg .ogv
+
+# Audio
+AddType audio/mpeg .mp3
+AddType audio/ogg .ogg
+
+# Documents
+AddType application/pdf .pdf
+AddType application/zip .zip
+AddType application/x-rar-compressed .rar
+
+# Other
+AddType text/plain .txt
+AddType application/x-shockwave-flash .swf
+AddType application/x-javascript .js
+Options -Indexes
+autoindex off;

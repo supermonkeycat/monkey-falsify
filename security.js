@@ -2,7 +2,7 @@
 // the idea of this is to stop administrators from seeing the true nature of the site
 // that being said you still can see the source code of the site pretty easily
 // and i also don't want to obfuscuation 
-
+/*
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.onkeydown = (e) => {
@@ -35,3 +35,4 @@ document.onkeydown = (e) => {
         e.stopPropagation();
     }
 };
+*/
