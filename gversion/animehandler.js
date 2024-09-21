@@ -32,7 +32,7 @@ function addAnimeButton(title, imageUrl, animeId) {
     button.appendChild(text);
 
     button.onclick = () => {
-        handleAnimeClick(title, animeId);
+        handleAnimeClick(animeId);
     };
 
     document.getElementById('animeContainer').appendChild(button);
